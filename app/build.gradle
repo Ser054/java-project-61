@@ -8,13 +8,21 @@ application {
 group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
 
+run {
+    standardInput = System.in
+}
+
 repositories {
     mavenCentral()
 }
 
-compileJava {
+/*compileJava {
     options.release = 17
-}
+}*/
+//I commented because of
+//Was error:
+//Execution failed for task ':compileJava'.
+//> error: release version 17 not supported
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')

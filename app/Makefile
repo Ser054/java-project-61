@@ -1,0 +1,3 @@
+
+run-dist:
+	./gradlew run
