@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class EvenCheck {
@@ -14,8 +13,8 @@ public class EvenCheck {
             int startNum = 0; // Начальное значение диапазона - "от"
             int endNum = 100; // Конечное значение диапазона - "до"
             int rndNum = startNum + (int) (Math.random() * endNum);
-            System.out.print("Question: " + rndNum +
-                    "\nYour answer: ");
+            System.out.print("Question: " + rndNum
+                    + "\nYour answer: ");
             Scanner scanner = new Scanner(System.in);
             String userAnswer = scanner.next();
             userAnswer = userAnswer.toLowerCase();
@@ -26,8 +25,8 @@ public class EvenCheck {
                 answer = "no";
             }
             if (!userAnswer.equals(answer)) {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + answer + "'.\n" +
-                        "Let's try again, " + nameUser + "!");
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + answer + "'.\n"
+                        + "Let's try again, " + nameUser + "!");
                 return;
             } else {
                 System.out.println("Correct!");

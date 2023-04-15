@@ -1,3 +1,3 @@
 
 run-dist:
-	./gradlew run
+	./gradlew run --console=plain
