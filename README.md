@@ -6,3 +6,6 @@
 ### Шаг 5, ролик:
 https://asciinema.org/a/mju1gUccrYP6za9FPgN0RI9GK
 
+### Шаг 6, ролик (добавил калькулятор):
+https://asciinema.org/a/Vdc6rW4UkL3Iq5XIWl59HHLFy
+
