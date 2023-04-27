@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calculator;
 import hexlet.code.games.EvenCheck;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Scanner;
@@ -14,6 +15,7 @@ public class App {
                         + "2 - Even\n"
                         + "3 - Calc\n"
                         + "4 - GCD\n"
+                        + "5 - Progression\n"
                         + "0 - Exit\n"
                         + "Your choice: ");
         Scanner scanner = new Scanner(System.in);
@@ -26,6 +28,7 @@ public class App {
         final int indexEven = 2;
         final int indexCalc = 3;
         final int indexGCD = 4;
+        final int indexProgression = 5;
         String nameUser = "NoName";
         switch (userAnswerInt) {
             case indexGreet:
@@ -45,6 +48,11 @@ public class App {
                 nameUser = Cli.greeting();
                 System.out.println("Find the greatest common divisor of given numbers.");
                 Engine.start(nameUser, new GCD());
+                break;
+            case indexProgression:
+                nameUser = Cli.greeting();
+                System.out.println("What number is missing in the progression?");
+                Engine.start(nameUser, new Progression());
                 break;
             default:
                 System.out.println("Good luck to you!");

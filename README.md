@@ -12,4 +12,7 @@ https://asciinema.org/a/Vdc6rW4UkL3Iq5XIWl59HHLFy
 ### Шаг 7, ролик (добавил НОД):
 https://asciinema.org/a/o8xgHHAXUFRIP93NhHd6XYaBV
 
+### Шаг 8, ролик (добавил прогрессию):
+https://asciinema.org/a/suHRnKUqZPaFr467roOUfsgDg
+
 
