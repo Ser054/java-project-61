@@ -7,12 +7,18 @@ public class Progression implements IGame {
         return startNum + (int) (Math.random() * endNum);
     }
     public String startGame(String nameUser) {
-        int rndNumStart = getRndNum(5, 20);
-        int rndStep = getRndNum(4, 10);
-        int rndPosition = getRndNum(1, 10);
+        final int rangeNumStart = 5;
+        final int rangeNumEnd = 20;
+        final int rangeStepStart = 4;
+        final int rangeStepEnd = 10;
+        final int rangePositionStart = 1;
+        final int rangePositionEnd = 10;
+        int rndNumStart = getRndNum(rangeNumStart, rangeNumEnd);
+        int rndStep = getRndNum(rangeStepStart, rangeStepEnd);
+        int rndPosition = getRndNum(rangePositionStart, rangePositionEnd);
         System.out.print("Question: ");
         String result = "";
-        for (int i = 1; i <= 10; i++) {
+        for (int i = rangePositionStart; i <= rangePositionEnd; i++) {
             if (i == rndPosition) {
                 result += Integer.toString(rndNumStart);
                 System.out.print(".. ");

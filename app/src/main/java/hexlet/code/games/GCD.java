@@ -4,8 +4,8 @@ import hexlet.code.IGame;
 
 public class GCD implements IGame {
     public static int getRndNum1to100() {
-        int startNum = 1; // Начальное значение диапазона - "от"
-        int endNum = 100; // Конечное значение диапазона - "до"
+        final int startNum = 1; // Начальное значение диапазона - "от"
+        final int endNum = 100; // Конечное значение диапазона - "до"
         return startNum + (int) (Math.random() * endNum);
     }
     public String startGame(String nameUser) {

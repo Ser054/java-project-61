@@ -4,7 +4,8 @@ import hexlet.code.IGame;
 
 public class Prime implements IGame {
     public static boolean isPrime(int num) {
-        if (num < 2) {
+        final int minDiv = 2;
+        if (num < minDiv) {
             return false;
         }
         for (int i = 2; i < num / 2; i++) {
@@ -18,7 +19,9 @@ public class Prime implements IGame {
         return startNum + (int) (Math.random() * endNum);
     }
     public String startGame(String nameUser) {
-        int rndNum = getRndNum(6, 100);
+        final int rangeNumStart = 6;
+        final int rangeNumEnd = 100;
+        int rndNum = getRndNum(rangeNumStart, rangeNumEnd);
         System.out.print("Question: " + rndNum
                 + "\nYour answer: ");
         String answer = "";

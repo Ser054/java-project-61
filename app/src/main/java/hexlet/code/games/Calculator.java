@@ -7,9 +7,12 @@ public class Calculator implements IGame {
         return startNum + (int) (Math.random() * endNum);
     }
     public String startGame(String nameUser) {
-        int rndNum1 = getRndNum(0, 20);
-        int rndNum2 = getRndNum(0, 20);
-        int rndSign = getRndNum(0, 3);
+        final int rndNumStartWith = 0;
+        final int rndNumEndWith = 20;
+        final int rndSignEndWith = 3;
+        int rndNum1 = getRndNum(rndNumStartWith, rndNumEndWith);
+        int rndNum2 = getRndNum(rndNumStartWith, rndNumEndWith);
+        int rndSign = getRndNum(rndNumStartWith, rndSignEndWith);
         char charSign = ' ';
         final int indexAdd = 0;
         final int indexDeduct = 1;

@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Engine {
     public static void start(String nameUser, IGame iGame) {
-        int countOfParties = 3;
-        for (int i = 0; i < countOfParties; i++) {
+        final int partiesStartWith = 1;
+        final int countOfParties = 3;
+        for (int i = partiesStartWith; i <= countOfParties; i++) {
             String result = iGame.startGame(nameUser);
             Scanner scanner = new Scanner(System.in);
             String userAnswer = scanner.next();
