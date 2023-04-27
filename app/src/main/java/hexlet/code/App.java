@@ -13,6 +13,7 @@ public class App {
                         + "1 - Greet\n"
                         + "2 - Even\n"
                         + "3 - Calc\n"
+                        + "4 - GCD\n"
                         + "0 - Exit\n"
                         + "Your choice: ");
         Scanner scanner = new Scanner(System.in);
