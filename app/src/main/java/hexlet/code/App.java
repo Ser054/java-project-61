@@ -4,6 +4,7 @@ import hexlet.code.games.Calculator;
 import hexlet.code.games.EvenCheck;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class App {
                         + "3 - Calc\n"
                         + "4 - GCD\n"
                         + "5 - Progression\n"
+                        + "6 - Prime\n"
                         + "0 - Exit\n"
                         + "Your choice: ");
         Scanner scanner = new Scanner(System.in);
@@ -29,6 +31,7 @@ public class App {
         final int indexCalc = 3;
         final int indexGCD = 4;
         final int indexProgression = 5;
+        final int indexPrime = 6;
         String nameUser = "NoName";
         switch (userAnswerInt) {
             case indexGreet:
@@ -53,6 +56,11 @@ public class App {
                 nameUser = Cli.greeting();
                 System.out.println("What number is missing in the progression?");
                 Engine.start(nameUser, new Progression());
+                break;
+            case indexPrime:
+                nameUser = Cli.greeting();
+                System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+                Engine.start(nameUser, new Prime());
                 break;
             default:
                 System.out.println("Good luck to you!");

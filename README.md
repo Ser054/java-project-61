@@ -15,4 +15,6 @@ https://asciinema.org/a/o8xgHHAXUFRIP93NhHd6XYaBV
 ### Шаг 8, ролик (добавил прогрессию):
 https://asciinema.org/a/suHRnKUqZPaFr467roOUfsgDg
 
+### Шаг 9, ролик (добавил проверку простое ли число):
+https://asciinema.org/a/aMU5CNBZ4iJYLn6580wcCRaQH
 
