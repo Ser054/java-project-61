@@ -9,3 +9,7 @@ https://asciinema.org/a/mju1gUccrYP6za9FPgN0RI9GK
 ### Шаг 6, ролик (добавил калькулятор):
 https://asciinema.org/a/Vdc6rW4UkL3Iq5XIWl59HHLFy
 
+### Шаг 7, ролик (добавил НОД):
+https://asciinema.org/a/o8xgHHAXUFRIP93NhHd6XYaBV
+
+
