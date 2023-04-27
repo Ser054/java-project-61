@@ -2,7 +2,7 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class Engine {
+public final class Engine {
     public static void start(String nameUser, IGame iGame) {
         final int partiesStartWith = 1;
         final int countOfParties = 3;

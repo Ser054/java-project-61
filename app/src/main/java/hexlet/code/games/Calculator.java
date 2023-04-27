@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.IGame;
 
-public class Calculator implements IGame {
+public final class Calculator implements IGame {
     public static int getRndNum(int startNum, int endNum) {
         return startNum + (int) (Math.random() * endNum);
     }

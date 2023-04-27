@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.IGame;
 
-public class Prime implements IGame {
+public final class Prime implements IGame {
     public static boolean isPrime(int num) {
         final int minDiv = 2;
         if (num < minDiv) {

@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.IGame;
 
-public class GCD implements IGame {
+public final class GCD implements IGame {
     public static int getRndNum1to100() {
         final int startNum = 1; // Начальное значение диапазона - "от"
         final int endNum = 100; // Конечное значение диапазона - "до"

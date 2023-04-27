@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.IGame;
 
-public class EvenCheck implements IGame {
+public final class EvenCheck implements IGame {
     public String startGame() {
         String standardName = "NoName";
         return startGame(standardName);
