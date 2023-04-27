@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.Calculator;
 import hexlet.code.games.EvenCheck;
+import hexlet.code.games.GCD;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Scanner;
@@ -23,6 +24,7 @@ public class App {
         final int indexGreet = 1;
         final int indexEven = 2;
         final int indexCalc = 3;
+        final int indexGCD = 4;
         String nameUser = "NoName";
         switch (userAnswerInt) {
             case indexGreet:
@@ -37,6 +39,11 @@ public class App {
                 nameUser = Cli.greeting();
                 System.out.println("What is the result of the expression?");
                 Engine.start(nameUser, new Calculator());
+                break;
+            case indexGCD:
+                nameUser = Cli.greeting();
+                System.out.println("Find the greatest common divisor of given numbers.");
+                Engine.start(nameUser, new GCD());
                 break;
             default:
                 System.out.println("Good luck to you!");
